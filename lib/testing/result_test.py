@@ -47,12 +47,12 @@ class TestResults:
         assert 1 <= result.score <= 5000
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     result.score = 5001
+        with pytest.raises(Exception):
+            result.score = 5001
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     result.score = 0
+        with pytest.raises(Exception):
+            result.score = 0
 
     def test_has_a_player(self):
         """result has a player"""
